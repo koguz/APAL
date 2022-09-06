@@ -15,21 +15,21 @@ class Graph:
         for n in a:
             self.add_vertex(n)
 
-    def add_edge(self, a, b, w): 
+    def add_edge(self, a, b):
         if a not in self.vertices or b not in self.vertices:
             return
         if a == b:
             return
         if a not in self.adjacency_list:
-            self.adjacency_list[a] = [(b, w)]
+            self.adjacency_list[a] = [b]
         else:
-            if (b, w) not in self.adjacency_list[a]:
-                self.adjacency_list[a].append((b, w))
+            if b not in self.adjacency_list[a]:
+                self.adjacency_list[a].append(b)
         if b not in self.adjacency_list:
-            self.adjacency_list[b] = [(a, w)]
+            self.adjacency_list[b] = [a]
         else:
-            if (a, w) not in self.adjacency_list[b]:
-                self.adjacency_list[b].append((a, w))
+            if a not in self.adjacency_list[b]:
+                self.adjacency_list[b].append(a)
 
     def get_adjacency_list(self, v):
         return [x[0] for x in self.adjacency_list[v]]
