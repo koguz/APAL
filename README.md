@@ -57,4 +57,5 @@ ogg.interconnectivity = 0.6
 ogg.intraconnectivity = 0.6
 ogg.generate_graph()
 ```
-Once `ogg.generate_graph()` runs, the graph can be accessed with `ogg.graph` and the clusters by `ogg.clusters`
+Once `ogg.generate_graph()` runs, the graph can be accessed with `ogg.graph` and the clusters by `ogg.clusters` variables.
+
