@@ -15,11 +15,11 @@ g = Graph()
 # add a vertex, the type can be anything, int, string or any other class
 g.add_vertex(1) 
 # or a list of vertices
-g.add_vertices([1 2 3 4])
+g.add_vertices([1, 2, 3, 4])
 # then, add an edge, say between 1 and 3
 g.add_edge(1, 3)
 # or a list of edges to a vertex
-g.add_edges(2, [3 4])
+g.add_edges(2, [3, 4])
 ```
 Once a graph is populated with vertices and edges, you can use it in APAL. 
 
