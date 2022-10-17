@@ -23,7 +23,7 @@ g.add_edges(2, [3, 4])
 ```
 Once a graph is populated with vertices and edges, you can use it in APAL. 
 
-To run APAL, create an APAL object, assign your graph to it, and run `run_apal(t)` with the `t` threshold, between 0 and 1. 
+To run APAL, create an APAL object, assign your graph to it. Then, run `run_apal(t)` with the threshold value `t`, between 0 and 1. 
 
 ```python
 apal = APAL()
@@ -57,5 +57,5 @@ ogg.interconnectivity = 0.6
 ogg.intraconnectivity = 0.6
 ogg.generate_graph()
 ```
-Once `ogg.generate_graph()` runs, the graph can be accessed with `ogg.graph` and the clusters by `ogg.clusters` variables.
+Once `ogg.generate_graph()` runs, the graph can be accessed with the variable `ogg.graph` and the clusters by the variable `ogg.clusters`.
 
