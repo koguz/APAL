@@ -11,6 +11,8 @@ https://www.sciencedirect.com/science/article/abs/pii/S0020025521008318
 APAL uses its own implementation of the Graph ADT. It is very straightforward to use this Graph class. 
 
 ```python
+from Graph import *
+
 g = Graph()
 # add a vertex, the type can be anything, int, string or any other class
 g.add_vertex(1) 
@@ -26,6 +28,8 @@ Once a graph is populated with vertices and edges, you can use it in APAL.
 To run APAL, create an APAL object, assign your graph to it. Then, run `run_apal(t)` with the threshold value `t`, between 0 and 1. 
 
 ```python
+from APAL import *
+
 apal = APAL()
 apal.graph = g # the graph we have defined above
 apal_clusters = apal.run_apal(0.75)
@@ -49,6 +53,8 @@ apal_result = cc.nvi_overlapping()
 This is an implementation of OGG discussed in the APAL paper. Simply create an OGG object and provide the parameters to generate a random graph that contains communities that overlap.
 
 ```python
+from OGG import *
+
 ogg = OGG()
 ogg.number_of_clusters = 10
 ogg.average_cluster_size = 15
