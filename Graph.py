@@ -19,6 +19,7 @@ class Graph:
         if a not in self.vertices or b not in self.vertices:
             return
         if a == b:
+            self.adjacency_list[a] = []
             return
         if a not in self.adjacency_list:
             self.adjacency_list[a] = [b]
